@@ -37,6 +37,13 @@ export const RegButton = styled.button`
   padding: 15px;
   margin: 10px 0;
   transition: box-shadow 0.3s ease, border-style 0.3s ease, border-color 0.3s ease;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+
+color: #EBF4F8;
 
   :focus {
     padding: 14px;
