@@ -1,10 +1,16 @@
 import React from 'react'
-import { FormHeaderContainer, FormHeaderText, ToSigninText } from './FormHeader.styled'
+import {
+  FormHeaderContainer, FormHeaderText, ToSigninText, StyledSpanLink,
+} from './FormHeader.styled'
 
 const FormHeader = () => (
   <FormHeaderContainer>
     <FormHeaderText>Регистрация</FormHeaderText>
-    <ToSigninText>Уже есть аккаунт? Войти</ToSigninText>
+    <ToSigninText>
+      Уже есть аккаунт?
+      {' '}
+      <StyledSpanLink>Войти</StyledSpanLink>
+    </ToSigninText>
   </FormHeaderContainer>
 )
 

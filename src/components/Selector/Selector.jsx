@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import {
   DropDownContainer, DropDownHeader, DropDownListContainer,
@@ -7,9 +7,13 @@ import {
 
 const options = ['Русский', 'Английский', 'Китайский', 'Итальянский']
 
-const Selector = React.memo(({ label }) => {
+const Selector = React.memo(({ label, setSelectorValue }) => {
   const [isOpen, setIsOpen] = useState(false)
   const [selectedOption, setSelectedOption] = useState('Русский')
+
+  useEffect(() => {
+    setSelectorValue(selectedOption)
+  }, [selectedOption])
 
   const toggling = () => setIsOpen(!isOpen)
 
@@ -48,6 +52,7 @@ const Selector = React.memo(({ label }) => {
 
 Selector.propTypes = {
   label: PropTypes.string,
+  setSelectorValue: PropTypes.func,
 }
 
 export default Selector

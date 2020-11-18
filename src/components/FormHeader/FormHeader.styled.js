@@ -19,3 +19,12 @@ export const ToSigninText = styled.p`
   line-height: 22px;
   margin: 5px 0px !important;
 `
+
+export const StyledSpanLink = styled.span`
+  color: #0880AE;
+  transition: text-decoration 0.3s ease;
+  :hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+`

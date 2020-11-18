@@ -10,7 +10,7 @@ export const FlexContainer = styled.div`
   }
 `
 
-export const FormContainer = styled.div`
+export const FormContainer = styled.form`
   display: flex;
   flex-wrap: wrap;
   background: #ffffff;
@@ -19,7 +19,7 @@ export const FormContainer = styled.div`
   max-width: 430px;
   box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 32px 64px rgba(44, 39, 56, 0.04);
   border-radius: 24px;
-  padding: 5px 20px;
+  padding: 20px 25px;
   color: #2c2738;
   font-size: 16px;
 `
@@ -42,8 +42,8 @@ export const RegButton = styled.button`
   font-size: 16px;
   line-height: 21px;
   text-align: center;
-
-color: #EBF4F8;
+  color: #EBF4F8;
+  transition: 0.3s ease;
 
   :focus {
     padding: 14px;
@@ -54,5 +54,13 @@ color: #EBF4F8;
   }
   :hover {
     box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.08), 0px 24px 48px rgba(44, 39, 56, 0.16);
+    cursor: pointer;
+  }
+  :disabled {
+    background: #DBE2EA;
+    color: #B1B5BF;
+    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.08);
+    border-color: #DBE2EA;
+    cursor: default;
   }
 `

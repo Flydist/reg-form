@@ -38,6 +38,10 @@ export const DropDownHeader = styled.div`
     padding: 9px;
     box-sizing: border-box;
   `}
+
+  :hover {
+    cursor: pointer;
+  }
 `
 
 export const DropDownListContainer = styled.div`
@@ -68,8 +72,9 @@ export const ListItem = styled.li`
   color: #756F86;
   margin-bottom: 20px;
   padding: 10px 15px;
-  &:hover {
+  :hover {
     background-color: #EBF4F8;
+    cursor: pointer;
   }
   :last-child {
     margin-bottom: 0px;
