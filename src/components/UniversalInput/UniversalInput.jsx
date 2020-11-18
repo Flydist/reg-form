@@ -4,7 +4,9 @@ import {
   StyledSpan, StyledInput, Container, ErrorMessage,
 } from './UniversalInput.styled'
 
-const UniversalInput = React.memo(({ label, placeholder }) => (
+const UniversalInput = React.memo(({
+  label, placeholder,
+}) => (
   <Container>
     <StyledSpan>{label}</StyledSpan>
     <StyledInput placeholder={placeholder} />
