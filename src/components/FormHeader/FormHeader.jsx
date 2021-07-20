@@ -7,7 +7,7 @@ const FormHeader = () => (
   <FormHeaderContainer>
     <FormHeaderText>Регистрация</FormHeaderText>
     <ToSigninText>
-      Уже есть аккаунт?
+      Уже есть аккаунт? Супер!
       {' '}
       <StyledSpanLink>Войти</StyledSpanLink>
     </ToSigninText>
